@@ -15,7 +15,7 @@
 # inherit from common hlte
 -include device/samsung/hlte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hlte,hlteskt,hltektt,SM-N900S,SM-N900K
+TARGET_OTA_ASSERT_DEVICE := hltexx,hlte,SM-N9005,hlteskt,hltektt,SM-N900S,SM-N900K,hltecan,SM-N900W8,hltetmo,SM-N900T,hlteatt,SM-N900A
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
@@ -32,3 +32,18 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 # inherit from the proprietary version
 -include vendor/samsung/hlte/BoardConfigVendor.mk
+
+# BlissPop Configs
+TARGET_TC_ROM := 4.9-sm
+TARGET_TC_KERNEL := 5.1-sm
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := false
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
+BLISS_PIPE := true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+#SaberMod
+-include vendor/bliss/config/sm.mk
