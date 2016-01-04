@@ -34,10 +34,10 @@ TARGET_USERIMAGES_USE_EXT4 := true
 -include vendor/samsung/hlte/BoardConfigVendor.mk
 
 # BlissPop Configs
-TARGET_TC_ROM := 4.9-sm
-TARGET_TC_KERNEL := 4.9-sm
+TARGET_TC_ROM := 4.9-linaro
+TARGET_TC_KERNEL := 4.8
 BLISSIFY := true
-BLISS_O3 := true
+BLISS_O3 := false
 BLISS_STRICT := false
 BLISS_GRAPHITE := true
 BLISS_KRAIT := true
