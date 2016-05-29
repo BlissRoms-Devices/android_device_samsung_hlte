@@ -1,3 +1,7 @@
 # Radio
 rild.libargs=-d /dev/smd0
 rild.libpath=/system/lib/libsec-ril.so
+
+# Specific device info (Bliss building)
+ro.product.model=Note 3
+ro.product.device=hlte
